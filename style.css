@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Coves-Bold";
+  src: url("Coves-Bold.ttf.woff") format("woff");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #3aaf9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Coves-Bold";
+}
+
+.card {
+  background-color: #ffffff;
+  
+  border: 0.1rem solid #ffffff;
+  border-radius: 1rem;
+  box-shadow: 5px 10px 18px #393939;
+  padding: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+input,select{
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    border:1px solid #3aaf9f;
+    width: 15rem;
+
+}
+
+.input_group{
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    color: #3aaf9f;
+}
+
+button{
+    width: 12rem;
+    margin: 2rem auto 0;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    border: 0;
+    background-color: #3aaf9f;
+    color: #ffffff;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .group_container{
+        flex-direction: column;
+    }
+    input,select{
+        width: 20rem;
+    }
+  }

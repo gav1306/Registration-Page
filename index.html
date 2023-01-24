@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Register Now</h1>
+      <form class="form">
+        <div class="group_container">
+          <div class="input_group">
+            <label for="firstName">First Name</label>
+            <input id="firstName" type="text" required />
+          </div>
+          <div class="input_group">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" type="text" required />
+          </div>
+        </div>
+        <div class="group_container">
+          <div class="input_group">
+            <label for="emailAdd">Email ID</label>
+            <input id="emailAdd" type="email" />
+          </div>
+          <div class="input_group">
+            <label for="number">Phone Number</label>
+            <input id="number" type="number" required />
+          </div>
+        </div>
+        <div class="group_container">
+          <div class="input_group">
+            <label for="password"> Password</label>
+            <input id="password" type="password" required />
+          </div>
+          <div class="input_group">
+            <label for="conPass">Confirm Password</label>
+            <input id="conPass" type="password" required />
+          </div>
+        </div>
+
+        <div class="input_group">
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="">Prefer not to say</option>
+          </select>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
